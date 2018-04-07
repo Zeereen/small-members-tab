@@ -1,4 +1,4 @@
-//META{"name":"Small-members-tab","description":"Make the members tab smaller(it gets full size when you hover it).","author":"Beard_Design, MKody","version":"1.6.0"}*//{}
+//META{"name":"Small-members-tab","description":"Make the members tab smaller(it gets full size when you hover it).","author":"Beard_Design, MKody","version":"1.6.1"}*//{}
 
 /*-------------------made by Beard Design-------------------------*/
 .app {
@@ -51,8 +51,8 @@ div[class*="membersWrap-"] div[class*="members-"]:hover div[class*="membersGroup
 }
 
 div[class*="membersWrap-"] {
-  min-width: 60px !important;
-  width: 60px !important
+  min-width: 90px !important;
+  width: 90px !important
 }
 
 /* TOFIX */
