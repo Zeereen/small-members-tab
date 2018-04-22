@@ -6,8 +6,8 @@
 # Preview:
 **Normal:**
 
-![normal](http://i.imgur.com/cmMHvCD.png)
+![normal](https://i.imgur.com/dRxRGXZ.png)
 
 **Hovered:**
 
-![hovered](http://i.imgur.com/fw0iEZd.png)
+![hovered](https://i.imgur.com/92a720j.png)

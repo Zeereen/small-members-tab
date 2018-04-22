@@ -1,4 +1,4 @@
-//META{"name":"Small-members-tab","description":"Make the members tab smaller(it gets full size when you hover it).","author":"Beard_Design, MKody","version":"1.6.1"}*//{}
+//META{"name":"Small-members-tab-fixed(April 2018)","description":"Make the members tab smaller(it gets full size when you hover it).","author":"Beard_Design, MKody, NightCross00","version":"1.6.2"}*//{}
 
 /*-------------------made by Beard Design-------------------------*/
 .app {
@@ -25,23 +25,26 @@ div[class*="membersWrap-"] div[class*="members-"]:hover div[class*="member-"] di
 }
 
 div[class*="membersWrap-"] div[class*="members-"] div[class*="membersGroup-"] {
-  transform: translate(-50%) scale(0.7);
+  transform: translate(-50%) scale(0.8);
   transition: 400ms cubic-bezier(.2, 0, 0, 1), max-width 1ms;
   width: auto;
+  height: auto;
   display: inline-block;
   min-width: 10px;
-  left: 35px;
+  left: 36px;
   position: relative;
   flex-basis: auto;
   box-sizing: border-box;
   text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
+  white-space: clip;
+  overflow: visible;
+  word-wrap: normal;
   max-width: 90px;
-  right: 0;
-  text-align: left;
+  right: 45px;
+  text-align: center;
   padding-left: 0;
   padding-right: 0;
+  padding-top: 5px;
 }
 
 div[class*="membersWrap-"] div[class*="members-"]:hover div[class*="membersGroup-"] {
@@ -50,9 +53,22 @@ div[class*="membersWrap-"] div[class*="members-"]:hover div[class*="membersGroup
   text-overflow: 'a';
 }
 
+/* Adjusting Collapsed Member List Width */
 div[class*="membersWrap-"] {
-  min-width: 90px !important;
-  width: 90px !important
+  min-width: 70px !important;
+  width: 70px !important
+}
+
+/* Avatar icon resizing */
+.avatar-1BXaQj{
+    transform:scale(1);
+    width: 38px;
+    height:38px;
+}
+
+/* Adjusting sizing between each member */
+.member-2FrNV0{
+    height: 45px;
 }
 
 /* TOFIX */
