@@ -59,10 +59,10 @@ div[class*="membersWrap-"] {
 }
 
 /* Avatar icon resizing */
-.avatar-16XVId{
+div[class*="image-33JSyf small-5Os1Bb"] {
     transform:scale(1);
-    width: 38px;
-    height:38px;
+    height: 35px;
+    width: 35px;
 }
 
 /* Adjusting sizing between each member */
@@ -72,13 +72,20 @@ div[class*="membersWrap-"] {
 
 /* Fixes avatar resize from above, in member profile pop outs (When you click on a member in the member list) */
 .popout-2fzvxG{
-    height: 90px !important;
-    width: 90px !important;
+    /* Commented out due to further Discord changes thus obsolete */
+    /* height: 90px !important;
+    width: 90px !important; */
 }
 
 /* Fixes the user profile popout avatar being misaligned */
 .maskProfile-1ObLFT{
     -webkit-mask:none;
+}
+
+/*Fixes the Status bubble icon (green/red/yellow/black circle) that overlays the avatar.*/
+.status-2s6iDp {
+    bottom: -7px;
+    right: -10px;
 }
 
 /* TOFIX */
