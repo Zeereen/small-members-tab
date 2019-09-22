@@ -1,16 +1,18 @@
-//META{"name":"Small-members-tab-fixed(June 2019)","description":"Make the members tab smaller(it gets full size when you hover it).","author":"Beard_Design, MKody, NightCross00","version":"1.6.3"}*//{}
+//META{"name":"Small-members-tab-fixed(Sep 2019)","description":"Make the members tab smaller(it gets full size when you hover it).","author":"Beard_Design, MKody, NightCross00","version":"1.6.4"}*//{}
 
 /*-------------------made by Beard Design-------------------------*/
 .app {
   overflow-x: hidden;
 }
 
+/* Collapsed Member List */
 div[class*="membersWrap-"] {
   transform: translate(0px);
   z-index: 2000;
   transition: all 400ms cubic-bezier(.2, 0, 0, 1);
 }
 
+/* How far for expanded-memberlist to expand out */
 div[class*="membersWrap-"]:hover {
   transform: translate(-150px);
 }
@@ -55,10 +57,24 @@ div[class*="membersWrap-"] div[class*="members-"]:hover div[class*="membersGroup
   text-overflow: 'a';
 }
 
+/* Collapsed - Role Headers*/
+header[class*="membersGroup-"]{
+    overflow: hidden;
+    text-overflow: 'ellipsis';
+    max-width: 66px;
+    padding-left: 8px;
+}
+
+/* Expanded - Role Headers*/
+div[class*="membersWrap-"]:hover header[class*="membersGroup-"]{
+  max-width: 216px;
+  padding-left: 16px;
+}
+
 /* Sets the Compacted Width*/
 div[class*="membersWrap-"] {
-  min-width: 70px !important;
-  width: 70px !important
+  min-width: 60px !important;
+  width: 60px !important
 }
 
 /* Avatar icon resizing */
