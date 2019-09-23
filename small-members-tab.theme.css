@@ -1,4 +1,4 @@
-//META{"name":"Small-members-tab-fixed(Sep 2019)","description":"Make the members tab smaller(it gets full size when you hover it).","author":"Beard_Design, MKody, NightCross00","version":"1.6.4"}*//{}
+//META{"name":"Small-members-tab-fixed(Sep 2019)","description":"Make the members tab smaller(it gets full size when you hover it).","author":"Beard_Design, MKody, NightCross00","version":"1.6.5"}*//{}
 
 /*-------------------made by Beard Design-------------------------*/
 .app {
@@ -63,6 +63,9 @@ header[class*="membersGroup-"]{
     text-overflow: 'ellipsis';
     max-width: 66px;
     padding-left: 8px;
+    /* Adjusting spacing between each group of members */
+    padding-top: 17px;
+    height: 35px;
 }
 
 /* Expanded - Role Headers*/
