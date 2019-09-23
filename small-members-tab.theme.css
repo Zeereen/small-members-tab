@@ -29,26 +29,26 @@ div[class*="membersWrap-"] div[class*="members-"]:hover div[class*="member-"] di
 
 /* Member Icon spacing adjustments + Misc */
 div[class*="membersWrap-"] div[class*="members-"] div[class*="membersGroup-"] {
-  transform: translate(-50%) scale(0.8);
-  transition: 400ms cubic-bezier(.2, 0, 0, 1), max-width 1ms;
+  position: relative;
   width: auto;
   height: auto;
-  display: inline-block;
   min-width: 10px;
-  left: 36px;
-  position: relative;
-  flex-basis: auto;
-  box-sizing: border-box;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  word-wrap: normal;
   max-width: 90px;
+  left: 36px;
   right: 45px;
   text-align: center;
   padding-left: 0;
   padding-right: 0;
   padding-top: 5px;
+  transform: translate(-50%) scale(0.8);
+  transition: 400ms cubic-bezier(.2, 0, 0, 1), max-width 1ms;
+  display: inline-block;
+  flex-basis: auto;
+  box-sizing: border-box;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-wrap: normal;
 }
 
 div[class*="membersWrap-"] div[class*="members-"]:hover div[class*="membersGroup-"] {
