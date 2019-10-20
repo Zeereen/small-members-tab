@@ -1,4 +1,4 @@
-//META{"name":"Small-members-tab-fixed(Sep 2019)","description":"Make the members tab smaller(it gets full size when you hover it).","author":"Beard_Design, MKody, NightCross00","version":"1.6.6"}*//{}
+//META{"name":"Small-members-tab-fixed(Oct 2019)","description":"Make the members tab smaller(it gets full size when you hover it).","author":"Beard_Design, MKody, NightCross00","version":"1.6.7"}*//{}
 
 /*-------------------made by Beard Design-------------------------*/
 .app {
@@ -7,14 +7,16 @@
 
 /* Collapsed Member List */
 div[class*="membersWrap-"] {
-  transform: translate(0px);
+  transform: translate(90px);
   z-index: 2000;
   transition: all 400ms cubic-bezier(.2, 0, 0, 1);
+  min-width: 60px !important;
+  width: 60px !important
 }
 
 /* How far for expanded-memberlist to expand out */
 div[class*="membersWrap-"]:hover {
-  transform: translate(-150px);
+  transform: translate(-90px);
 }
 
 /* Player Names disappear when compacted*/
@@ -63,7 +65,6 @@ header[class*="membersGroup-"]{
     text-overflow: 'ellipsis';
     max-width: 66px;
     padding-left: 8px;
-    /* Adjusting spacing between each group of members */
     padding-top: 17px;
     height: 35px;
 }
@@ -74,12 +75,6 @@ div[class*="membersWrap-"]:hover header[class*="membersGroup-"]{
   padding-left: 8px;
 }
 
-/* Sets the Compacted Width*/
-div[class*="membersWrap-"] {
-  min-width: 60px !important;
-  width: 60px !important
-}
-
 /* Avatar icon resizing */
 div[class*="image-33JSyf small-5Os1Bb"] {
     transform:scale(1);
@@ -87,22 +82,13 @@ div[class*="image-33JSyf small-5Os1Bb"] {
     width: 35px;
 }
 
+/*Broke by Oct. 2019 Discord Update but spacing seems ok,*/
+/*Leaving this part commented out for future reference*/
 /* Adjusting sizing between each member */
-.member-2FrNV0{
-    height: 45px;
-}
+/*.member-2FrNV0{*/
+/*    height: 45px;*/
+/*}*/
 
-/* Fixes avatar resize from above, in member profile pop outs (When you click on a member in the member list) */
-.popout-2fzvxG{
-    /* Commented out due to further Discord changes thus obsolete */
-    /* height: 90px !important;
-    width: 90px !important; */
-}
-
-/* Fixes the user profile popout avatar being misaligned */
-.maskProfile-1ObLFT{
-    -webkit-mask:none;
-}
 
 /*Fixes the Status bubble icon (green/red/yellow/black circle) that overlays the avatar.*/
 .status-2s6iDp {
