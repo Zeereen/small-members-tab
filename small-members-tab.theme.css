@@ -1,4 +1,4 @@
-//META{"name":"Small-members-tab-fixed(Oct 2019)","description":"Make the members tab smaller(it gets full size when you hover it).","author":"Beard_Design, MKody, NightCross00","version":"1.6.7"}*//{}
+//META{"name":"Small-members-tab-fixed(Feb 2020)","description":"Make the members tab smaller(it gets full size when you hover it).","author":"Beard_Design, MKody, NightCross00","version":"1.7.0"}*//{}
 
 /*-------------------made by Beard Design-------------------------*/
 .app {
@@ -7,7 +7,7 @@
 
 /* Collapsed Member List */
 div[class*="membersWrap-"] {
-  transform: translate(90px);
+  transform: translate(0px);
   z-index: 2000;
   transition: all 400ms cubic-bezier(.2, 0, 0, 1);
   min-width: 60px !important;
@@ -16,7 +16,7 @@ div[class*="membersWrap-"] {
 
 /* How far for expanded-memberlist to expand out */
 div[class*="membersWrap-"]:hover {
-  transform: translate(-90px);
+  transform: translate(-181px);
 }
 
 /* Player Names disappear when compacted*/
