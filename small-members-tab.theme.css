@@ -60,7 +60,7 @@ div[class*="membersWrap-"] div[class*="members-"]:hover div[class*="membersGroup
 }
 
 /* Collapsed - Role Headers*/
-header[class*="membersGroup-"]{
+h2[class*="membersGroup-"]{
     overflow: hidden;
     text-overflow: 'ellipsis';
     max-width: 66px;
@@ -70,7 +70,7 @@ header[class*="membersGroup-"]{
 }
 
 /* Expanded - Role Headers*/
-div[class*="membersWrap-"]:hover header[class*="membersGroup-"]{
+div[class*="membersWrap-"]:hover h2[class*="membersGroup-"]{
   max-width: 216px;
   padding-left: 8px;
 }
