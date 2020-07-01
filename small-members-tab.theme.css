@@ -8,7 +8,7 @@
 /* Collapsed Member List */
 div[class*="membersWrap-"] {
   transform: translate(90px);
-  z-index: 2000;
+  z-index: 1000;
   transition: all 400ms cubic-bezier(.2, 0, 0, 1);
   min-width: 60px !important;
   width: 60px !important
