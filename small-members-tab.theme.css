@@ -1,4 +1,4 @@
-//META{"name":"Small-members-tab-fixed(June 2020)","description":"Make the members tab smaller(it gets full size when you hover it).","author":"Beard_Design, MKody, NightCross00","version":"1.7.1"}*//{}
+//META{"name":"Small-members-tab-fixed(Sep 2021)","description":"Make the members tab smaller(it gets full size when you hover it).","author":"Beard_Design, MKody, NightCross00","version":"1.7.2"}*//{}
 
 /*-------------------made by Beard Design-------------------------*/
 .app {
@@ -6,7 +6,7 @@
 }
 
 /* Collapsed Member List */
-div[class*="membersWrap-"] {
+aside[class*="da-membersWrap"] {
   transform: translate(90px);
   z-index: 1000;
   transition: all 400ms cubic-bezier(.2, 0, 0, 1);
@@ -15,22 +15,22 @@ div[class*="membersWrap-"] {
 }
 
 /* How far for expanded-memberlist to expand out */
-div[class*="membersWrap-"]:hover {
+aside[class*="da-membersWrap"]:hover {
   transform: translate(-90px);
 }
 
 /* Player Names disappear when compacted*/
-div[class*="membersWrap-"] div[class*="members-"] div[class*="member-"] div[class*="memberInner-"] {
+div[class*="da-members"] div[class*="members-"] div[class*="member-"] div[class*="memberInner-"] {
   opacity: 0;
   transition: all 400ms ease-in;
 }
 
-div[class*="membersWrap-"] div[class*="members-"]:hover div[class*="member-"] div[class*="memberInner-"] {
+div[class*="da-members"] div[class*="members-"]:hover div[class*="member-"] div[class*="memberInner-"] {
   opacity: 1;
 }
 
 /* Member Icon spacing adjustments + Misc */
-div[class*="membersWrap-"] div[class*="members-"] div[class*="membersGroup-"] {
+div[class*="da-members"] div[class*="members-"] div[class*="da-membersGroup"] {
   position: relative;
   width: auto;
   height: auto;
@@ -53,24 +53,25 @@ div[class*="membersWrap-"] div[class*="members-"] div[class*="membersGroup-"] {
   word-wrap: normal;
 }
 
-div[class*="membersWrap-"] div[class*="members-"]:hover div[class*="membersGroup-"] {
+div[class*="da-members"] div[class*="members-"]:hover div[class*="da-membersGroup"] {
   transform: translate(-15px) scale(1);
   max-width: 180px;
   text-overflow: 'a';
 }
 
 /* Collapsed - Role Headers*/
-h2[class*="membersGroup-"]{
+h2[class*="da-membersGroup"]{
     overflow: hidden;
     text-overflow: 'ellipsis';
     max-width: 66px;
     padding-left: 8px;
     padding-top: 17px;
     height: 35px;
+    width: fit-content;
 }
 
 /* Expanded - Role Headers*/
-div[class*="membersWrap-"]:hover h2[class*="membersGroup-"]{
+div[class*="da-members"]:hover h2[class*="da-membersGroup"]{
   max-width: 216px;
   padding-left: 8px;
 }
