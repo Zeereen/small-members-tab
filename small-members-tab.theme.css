@@ -1,4 +1,4 @@
-//META{"name":"Small-members-tab-fixed(Nov 2021)","description":"Make the members tab smaller(it gets full size when you hover it).","author":"Beard_Design, MKody, NightCross00","version":"1.7.3"}*//{}
+//META{"name":"Small-members-tab-fixed(July 2022)","description":"Make the members tab smaller(it gets full size when you hover it).","author":"Beard_Design, MKody, NightCross00","version":"1.8.0"}*//{}
 
 /*-------------------made by Beard Design-------------------------*/
 .app {
@@ -14,8 +14,22 @@ aside[class*="membersWrap"] {
   width: 60px !important
 }
 
+/* Collapsed Member List (For Threads)*/
+div[class*="membersWrap"] {
+  transform: translate(90px);
+  z-index: 1000;
+  transition: all 400ms cubic-bezier(.2, 0, 0, 1);
+  min-width: 60px !important;
+  width: 60px !important
+}
+
 /* How far for expanded-memberlist to expand out */
 aside[class*="membersWrap"]:hover {
+  transform: translate(-90px);
+}
+
+/* How far for expanded-memberlist to expand out (For Threads)*/
+div[class*="membersWrap"]:hover {
   transform: translate(-90px);
 }
 
@@ -93,8 +107,8 @@ div[class*="image-33JSyf small-5Os1Bb"] {
 
 /*Fixes the Status bubble icon (green/red/yellow/black circle) that overlays the avatar.*/
 .status-2s6iDp {
-    bottom: -7px;
-    right: -10px;
+  bottom: -7px;
+  right: -10px;
 }
 
 /* TOFIX */
@@ -105,6 +119,25 @@ div[class*="image-33JSyf small-5Os1Bb"] {
 .chat.flex-vertical.flex-spacer.private>.content.flex-spacer.flex-horizontal>.flex-spacer.flex-vertical {
   margin-right: 0px;
   z-index: 0
+}
+
+/* Notification/Inbox Popout (For Mentions Tab)*/
+div[class*="recentMentionsPopout-"][class*="messagesPopoutWrap-"] {
+  width: 200%;
+  right: 20px;
+  float: right;
+}
+
+/* Notification/Inbox Popout (For Unreads Tab)*/
+div[class*="recentMentionsPopout-"] {
+  width: 200%;
+  right: 20px;
+  float: right;
+}
+
+/* Pinned Messages */
+div[class*="messagesPopoutWrap-"] {
+  width: 530px;
 }
 
 /*-------------------made by Beard Design-------------------------*/
