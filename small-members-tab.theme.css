@@ -1,4 +1,4 @@
-//META{"name":"Small-members-tab-fixed(July 2022)","description":"Make the members tab smaller(it gets full size when you hover it).","author":"Beard_Design, MKody, NightCross00","version":"1.8.0"}*//{}
+//META{"name":"Small-members-tab-fixed(Dec 2022)","description":"Make the members tab smaller(it gets full size when you hover it).","author":"Beard_Design, MKody, NightCross00","version":"1.8.1"}*//{}
 
 /*-------------------made by Beard Design-------------------------*/
 .app {
@@ -34,12 +34,18 @@ div[class*="membersWrap"]:hover {
 }
 
 /* Player Names disappear when compacted*/
-div[class*="members"] div[class*="members-"] div[class*="member-"] div[class*="memberInner-"] {
+div[class*="nameAndDecorators-"] {
   opacity: 0;
   transition: all 400ms ease-in;
 }
 
-div[class*="members"] div[class*="members-"]:hover div[class*="member-"] div[class*="memberInner-"] {
+/* Player Names reappear when expanded (Normal)*/
+aside[class*="membersWrap"]:hover div[class*="nameAndDecorators-"] {
+  opacity: 1;
+}
+
+/* Player Names reappear when expanded (For Threads)*/
+div[class*="membersWrap"]:hover div[class*="nameAndDecorators-"] {
   opacity: 1;
 }
 
@@ -140,4 +146,5 @@ div[class*="messagesPopoutWrap-"] {
   width: 530px;
 }
 
+/* https://css-tricks.com/attribute-selectors/ */
 /*-------------------made by Beard Design-------------------------*/
