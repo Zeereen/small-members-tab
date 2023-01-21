@@ -34,7 +34,7 @@ div[class*="membersWrap"]:hover {
 }
 
 /* Player Names disappear when compacted*/
-div[class*="nameAndDecorators-"] {
+div[class*="nameAndDecorators-3ERwy2"] {
   opacity: 0;
   transition: all 400ms ease-in;
 }
