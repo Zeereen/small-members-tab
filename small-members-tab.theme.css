@@ -1,8 +1,13 @@
-//META{"name":"Small-members-tab-fixed(Dec 2022)","description":"Make the members tab smaller(it gets full size when you hover it).","author":"Beard_Design, MKody, NightCross00","version":"1.8.1"}*//{}
+//META{"name":"Small-members-tab-fixed(Jan 2023)","description":"Make the members tab smaller(it gets full size when you hover it).","author":"Beard_Design, MKody, NightCross00","version":"1.8.2"}*//{}
 
 /*-------------------made by Beard Design-------------------------*/
 .app {
   overflow-x: hidden;
+}
+
+/* Static fix the color for status highlight; the menu that appears after clicking your avatar icon and also the submenu items for status selection (online/away/invisible/etc) */
+.menu-KSaHL1 .menuItemFocused-2cC4Ku, .colorDefault-CDqZdO.focused-3qFvc8{
+  background-color: #4752c4;
 }
 
 /* Collapsed Member List */
