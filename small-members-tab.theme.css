@@ -1,4 +1,4 @@
-//META{"name":"Small-members-tab-fixed(April 2023)","description":"Make the members tab smaller(it gets full size when you hover it).","author":"Beard_Design, MKody, NightCross00","version":"1.8.3"}*//{}
+//META{"name":"Small-members-tab-fixed(Sep 2023)","description":"Make the members tab smaller(it gets full size when you hover it).","author":"Beard_Design, MKody, NightCross00","version":"1.8.4"}*//{}
 
 /*-------------------made by Beard Design-------------------------*/
 .app {
@@ -149,6 +149,12 @@ div[class*="recentMentionsPopout-"] {
 /* Pinned Messages */
 div[class*="messagesPopoutWrap-"] {
   width: 530px;
+}
+
+/* Fix Screen Share modal on small non-maximized Discord Windows */
+form {
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 /* https://css-tricks.com/attribute-selectors/ */
