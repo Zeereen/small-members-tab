@@ -151,11 +151,24 @@ div[class*="messagesPopoutWrap-"] {
   width: 530px;
 }
 
-/* Fix Screen Share modal on small non-maximized Discord Windows */
-form {
+/* Fix Screen Share modal on small non-maximized Discord Windows - Adds scroll bar to Screen Share Modal */
+div[class="focusLock-bHVOlV"] form:not([class]) {
   overflow-x: hidden;
   overflow-y: auto;
 }
+
+/* Move Screen Share Model's close button further away from the scroll bar enabled by above CSS*/
+div[class="focusLock-bHVOlV"] button[class*="modalCloseButton-"] {
+  top: 20px;
+  right: 30px;
+  z-index: 10;
+}
+
+/* Moves Screen Share's spectators element to the further left in the
+ordering of elements so it is not obscured by the 1080p 60FPS pill element */
+div[class="container-17V_oy"] div:not([class]) {
+  order: -1
+};
 
 /* Moves Screen Share's spectators element to the further left in the
 ordering of elements so it is not obscured by the 1080p 60FPS pill element */
