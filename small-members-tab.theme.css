@@ -1,4 +1,4 @@
-//META{"name":"Small-members-tab-fixed(Sep 2023)","description":"Make the members tab smaller(it gets full size when you hover it).","author":"Beard_Design, MKody, NightCross00","version":"1.8.4"}*//{}
+//META{"name":"Small-members-tab-fixed(Sep 2023)","description":"Make the members tab smaller(it gets full size when you hover it).","author":"Beard_Design, MKody, NightCross00","version":"1.8.5"}*//{}
 
 /*-------------------made by Beard Design-------------------------*/
 .app {
@@ -156,6 +156,12 @@ form {
   overflow-x: hidden;
   overflow-y: auto;
 }
+
+/* Moves Screen Share's spectators element to the further left in the
+ordering of elements so it is not obscured by the 1080p 60FPS pill element */
+div[class="container-17V_oy"] div:not([class]) {
+  order: -1
+};
 
 /* https://css-tricks.com/attribute-selectors/ */
 /*-------------------made by Beard Design-------------------------*/
